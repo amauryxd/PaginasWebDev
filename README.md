@@ -2,4 +2,4 @@
 
 ## Edad: 21
 
-![Mi foto](./img/foto.jpeg)
+![Mi foto](./docs/img/foto.jpeg)
