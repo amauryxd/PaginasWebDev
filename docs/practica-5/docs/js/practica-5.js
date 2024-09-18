@@ -40,6 +40,21 @@ function calcularTotal(){
     return total;
 }
 
+//instruccion 4
+function aplicarDescuento(total){
+    if(total > 100){
+        return  total * .9;
+    }
+}
+
+//Instruccion 5
+function procesarCompra(){
+    console.log("procesando Compra...");
+    setTimeout(function(){
+        console.log(`Compra completada. Total a pagar: $${aplicarDescuento(calcularTotal())}`)
+    },3000)
+}
+
 agregaAlCarrito("Pantalones",3);
 agregaAlCarrito("Pantalones",4);
 agregaAlCarrito("Pantalones",5);
@@ -49,4 +64,4 @@ agregaAlCarrito("Camiseta",3);
 agregaAlCarrito("Pantalones",2);
 
 console.log(carrito)
-console.log(calcularTotal());
+procesarCompra()
