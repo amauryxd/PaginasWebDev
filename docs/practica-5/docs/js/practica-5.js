@@ -30,6 +30,23 @@ function agregaAlCarrito(productoNombre, cantidad){
     console.error(`El producto "${productoNombre}" no existe`);
 }
 
+//Instruccion 3
+function calcularTotal(){
+    let total = 0;
+    for (let item of carrito) {
+        total += item.precio * item.cantidad;
+    }
+
+    return total;
+}
+
 agregaAlCarrito("Pantalones",3);
 agregaAlCarrito("Pantalones",4);
 agregaAlCarrito("Pantalones",5);
+agregaAlCarrito("Zapatos",2);
+agregaAlCarrito("Camisteas",3);
+agregaAlCarrito("Camiseta",3);
+agregaAlCarrito("Pantalones",2);
+
+console.log(carrito)
+console.log(calcularTotal());
