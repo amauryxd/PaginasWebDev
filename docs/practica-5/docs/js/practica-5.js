@@ -50,9 +50,29 @@ function aplicarDescuento(total){
 //Instruccion 5
 function procesarCompra(){
     console.log("procesando Compra...");
+    console.log("3...");
     setTimeout(function(){
+        console.log("2...");
+        setTimeout(function(){
+            console.log("1...");
+            setTimeout(function(){
         console.log(`Compra completada. Total a pagar: $${aplicarDescuento(calcularTotal())}`)
-    },3000)
+            },1000)
+        },1000)
+    },1000)
+}
+//reto numero 1 elimiar del carrito
+function eliminarCarrito(productoNom, cantidad){
+    for (let item of carrito) {
+        if(productoNom == item.nombre){
+            item.cantidad -= cantidad;
+            if(item.cantidad <= 0){
+                carrito.splice(carrito.indexOf(item),1);
+                console.log(`${productoNom}, a sido eliminado del carrito`)
+            }
+            console.log(`Se ha(n) quitado ${cantidad} ${productoNom} del carrito`);
+        }
+    }
 }
 
 agregaAlCarrito("Pantalones",3);
@@ -62,6 +82,11 @@ agregaAlCarrito("Zapatos",2);
 agregaAlCarrito("Camisteas",3);
 agregaAlCarrito("Camiseta",3);
 agregaAlCarrito("Pantalones",2);
+//eliminar del carrito
+eliminarCarrito("Zapatos",2);
+eliminarCarrito("Camiseta",1);
+
+
 
 console.log(carrito)
 procesarCompra()
