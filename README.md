@@ -9,3 +9,5 @@
 ### Link Practica 5: https://amauryxd.github.io/PaginasWebDev/practica-5/docs/index.html
 
 ### Link Practica 6: https://amauryxd.github.io/PaginasWebDev/practica-6/index.html
+
+### Link Practica 7: https://amauryxd.github.io/PaginasWebDev/practica-7/index.html
