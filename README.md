@@ -11,3 +11,5 @@
 ### Link Practica 6: https://amauryxd.github.io/PaginasWebDev/practica-6/index.html
 
 ### Link Practica 7: https://amauryxd.github.io/PaginasWebDev/practica-7/index.html
+
+### Link Practica 8: https://amauryxd.github.io/PaginasWebDev/practica-8/index.html
